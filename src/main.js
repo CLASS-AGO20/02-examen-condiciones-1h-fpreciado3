@@ -27,6 +27,10 @@ export default class App {
         return costo;
     }
 
+    puedeCircular(dia, terminacion) {
+        let circulacion;
+    }
+
 }
 
 let app = new App();
