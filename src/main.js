@@ -7,6 +7,8 @@ export default class App {
         } else {
             conversion = pesos / 22.7;
         }
+
+        return conversion;
     }
 
 }
