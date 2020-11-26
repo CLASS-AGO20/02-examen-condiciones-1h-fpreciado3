@@ -16,3 +16,6 @@ export default class App {
 let app = new App();
 
 //Prueba de la función convertir()
+console.log(app.convertir(1989));
+console.log(app.convertir(2000));
+console.log(app.convertir(4500));
