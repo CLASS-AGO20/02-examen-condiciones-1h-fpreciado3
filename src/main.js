@@ -13,6 +13,16 @@ export default class App {
 
     costoRenta(kilometros) {
         let costo;
+
+        if(kilometros < 50) {
+            costo = 3 * kilometros;
+        } else if(kilometros > 50 && kilometros < 100) {
+            costo = 5 * kilometros;
+        } else if(kilometros > 100 && kilometros < 200) {
+            costo = 6 * kilometros;
+        } else {
+            costo = 6.5 * kilometros;
+        }
     }
 
 }
