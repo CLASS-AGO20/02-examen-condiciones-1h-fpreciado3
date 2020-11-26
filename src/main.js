@@ -11,6 +11,10 @@ export default class App {
         return conversion;
     }
 
+    costoRenta(kilometros) {
+        let costo;
+    }
+
 }
 
 let app = new App();
