@@ -30,13 +30,13 @@ export default class App {
     puedeCircular(dia, terminacion) {
         let circulacion;
 
-        if(dia!== 1 && terminacion == 0) {
+        if(dia !== 1 && terminacion == 0){
             circulacion = false;
-        } else if(dia!==2 && terminacion == 1) {
+        } else if(dia !== 2 && terminacion ==1){
             circulacion = false;
-        } else if(dia!==3 && terminacion == 2 || dia!==4 & terminacion == 2) {
+        } else if(dia !== 3 && terminacion ==2 && dia !== 4 && terminacion  == 2){
             circulacion = false;
-        } else if(dia > 7 && dia < 1) {
+        } else if(dia > 7 || 0 >= dia) {
             circulacion = false;
         } else {
             circulacion = true;
@@ -59,3 +59,17 @@ console.log(app.costoRenta(43));
 console.log(app.costoRenta(86));
 console.log(app.costoRenta(140));
 console.log(app.costoRenta(304));
+
+//Prueba de la función puedeCircular()
+console.log(app.puedeCircular(2,0));
+console.log(app.puedeCircular(1,0));
+console.log(app.puedeCircular(1,1));
+console.log(app.puedeCircular(2,1));
+console.log(app.puedeCircular(5,2));
+console.log(app.puedeCircular(3,2));
+console.log(app.puedeCircular(4,2));
+console.log(app.puedeCircular(5,6));
+console.log(app.puedeCircular(6,9));
+console.log(app.puedeCircular(7,7));
+console.log(app.puedeCircular(9,8));
+console.log(app.puedeCircular(0,3));
