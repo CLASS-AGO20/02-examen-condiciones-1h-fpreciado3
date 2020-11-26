@@ -35,3 +35,9 @@ let app = new App();
 console.log(app.convertir(1989));
 console.log(app.convertir(2000));
 console.log(app.convertir(4500));
+
+//Prueba de la función costoRenta()
+console.log(app.costoRenta(43));
+console.log(app.costoRenta(86));
+console.log(app.costoRenta(140));
+console.log(app.costoRenta(304));
