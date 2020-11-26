@@ -29,6 +29,18 @@ export default class App {
 
     puedeCircular(dia, terminacion) {
         let circulacion;
+
+        if(dia!== 1 && terminacion == 0) {
+            circulacion = false;
+        } else if(dia!==2 && terminacion == 1) {
+            circulacion = false;
+        } else if(dia!==3 && terminacion == 2 || dia!==4 & terminacion == 2) {
+            circulacion = false;
+        } else if(dia > 7 && dia < 1) {
+            circulacion = false;
+        } else {
+            circulacion = true;
+        }
     }
 
 }
