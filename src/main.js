@@ -3,12 +3,14 @@ export default class App {
         let conversion;
 
         if(pesos < 2000) {
-            conversion = pesos * 20.5;
+            conversion = pesos / 20.5;
         } else {
-            conversion = pesos * 22.7;
+            conversion = pesos / 22.7;
         }
     }
 
 }
 
 let app = new App();
+
+//Prueba de la función convertir()
