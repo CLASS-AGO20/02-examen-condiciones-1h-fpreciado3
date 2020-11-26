@@ -1,4 +1,7 @@
 export default class App {
+    convertir(pesos) {
+        let conversion;
+    }
 
 }
 
