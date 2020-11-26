@@ -23,6 +23,8 @@ export default class App {
         } else {
             costo = 6.5 * kilometros;
         }
+
+        return costo;
     }
 
 }
